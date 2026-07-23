@@ -121,7 +121,7 @@ int main(void)
   HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
   HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
   HAL_UART_Receive_IT(&huart3, rx_buf, 1);
-  Load(5000, 5000);//2000/7200=27.8%占空比，电机转?约为满??(330)??27.8%
+  Load(3000, 3000);//2000/7200=27.8%占空比，电机转?约为满??(330)??27.8%
   HAL_UART_Transmit(&huart3, (const uint8_t *)"Init Success\r\n", 14, 1000);
   /* USER CODE END 2 */
 
